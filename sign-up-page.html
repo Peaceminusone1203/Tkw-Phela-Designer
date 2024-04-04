@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global1.css" />
+    <link rel="stylesheet" href="./sign-up-page.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=K2D:wght@500;700;800&display=swap"
+    />
+  </head>
+  <body>
+    <div class="sign-up-page">
+      <img
+        class="n-1-icon1"
+        alt=""
+        src="./public1/423693712-776246651192397-2658184990903786644-n-1@2x.png"
+      />
+
+      <div class="sign-up-page-child"></div>
+      <div class="group-parent">
+        <div class="register-parent">
+          <div class="register">Register</div>
+          <div class="ellipse-group">
+            <div class="ellipse-div"></div>
+            <img class="close-icon1" alt="" src="./public1/close.svg" />
+          </div>
+          <div class="frame-div">
+            <div class="component-1-group">
+              <div class="component-11">
+                <div class="component-1-item"></div>
+                <div class="email2">
+                  <span>Email</span>
+                  <input type="email" value="" id="email" required>
+                </div>
+              </div>
+              <img class="vector-icon" alt="" src="./public1/vector-1.svg" />
+
+              <img class="email-icon1" alt="" src="./public1/email.svg" />
+            </div>
+            <div class="component-2-group">
+              <div class="component-11">
+                <div class="component-1-item"></div>
+                <div class="email2">
+                  <span>Password</span>
+                  <input type="text" value="" id="password" required>
+                </div>
+              </div>
+              <img class="frame-child1" alt="" src="./public1/vector-1.svg" />
+
+              <img class="lock-icon1" alt="" src="./public1/lock.svg" />
+            </div>
+            <div class="frame-wrapper">
+              <div class="check-box-group">
+                <div class="check-box1">
+                  <div class="check-box-item"></div>
+                </div>
+                <div class="i-agree-to">I agree to the terms & conditions</div>
+              </div>
+            </div>
+          </div>
+          <div class="frame-parent1">
+            <div class="register-wrapper" id="frameContainer">
+              <div class="register1">Register</div>
+            </div>
+            <div
+              class="already-have-an-account-login-wrapper"
+              id="frameContainer1"
+            >
+              <div class="already-have-an-container">
+                <span class="already-have-an">Already have an account? </span>
+                <b>Login</b>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="component-1-container">
+          <div class="component-12">
+            <div class="component-1-item"></div>
+            <!-- <div class="email2">Name</div> -->
+            <div class="email2">
+              <span>Name</span>
+              <input type="text" value="" id="username" required>
+            </div>
+          </div>
+          <img class="frame-child2" alt="" src="./public1/vector-1.svg" />
+
+          <img class="person-icon" alt="" src="./public1/person.svg" />
+        </div>
+      </div>
+      <div class="header1">
+        <img
+          class="logo-icon1"
+          alt=""
+          src="./public1/logo@2x.png"
+          id="logoImage"
+        />
+
+        <div class="menu-bar1">
+          <div class="sn-phm2">
+            <a href="sign-up-page.html"  class="sn-phm3">Sản phẩm</a>
+          </div>
+          <div class="cu-chuyn-thng-hiu1">
+            <a href="sign-up-page.html" class="cu-chuyn-thng1">Câu chuyện thương hiệu</a>
+          </div>
+          <div class="tin-tc2">
+            <a href="sign-up-page.html" class="sn-phm3">Tin tức</a>
+          </div>
+          <div class="ca-hng2">
+            <a href="sign-up-page.html" class="sn-phm3">Cửa hàng</a>
+          </div>
+          <div class="lin-h2">
+            <a href="sign-up-page.html" class="sn-phm3">Liên hệ</a>
+          </div>
+        </div>
+        <div class="login-container" id="frameContainer">
+          <a href="login.html" class="login4">
+            <b class="sn-phm3">Login</b>
+          </a>
+          <a href="sign-up-page.html" class="sign-up2">
+            <b class="already-have-an-container">Sign up</b>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var frameContainer = document.getElementById("frameContainer");
+      if (frameContainer) {
+        frameContainer.addEventListener("click", function (e) {
+          window.location.href = "./login-page.html";
+        });
+      }
+      
+      var frameContainer1 = document.getElementById("frameContainer1");
+      if (frameContainer1) {
+        frameContainer1.addEventListener("click", function (e) {
+          window.location.href = "./login-page.html";
+        });
+      }
+      
+      var logoImage = document.getElementById("logoImage");
+      if (logoImage) {
+        logoImage.addEventListener("click", function (e) {
+          // Please sync "Homepage" to the project
+        });
+      }
+      
+      var frameContainer = document.getElementById("frameContainer");
+      if (frameContainer) {
+        frameContainer.addEventListener("click", function (e) {
+          window.location.href = "./sign-up-page.html";
+        });
+      }
+      </script>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+  import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+
+  // Your web app's Firebase configuration
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyD18a-7UuNVZ0_SuSe8iFgKXYjAy-3kI3w",
+    authDomain: "demo1-aa2be.firebaseapp.com",
+    databaseURL: "https://demo1-aa2be-default-rtdb.firebaseio.com/",
+    projectId: "demo1-aa2be",
+    storageBucket: "demo1-aa2be.appspot.com",
+    messagingSenderId: "736186588162",
+    appId: "1:736186588162:web:e8a00f86f17ef7f1a8db1b",
+    measurementId: "G-HRTFM7859D"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+
+  //get ref to database services
+  const db = getDatabase(app);
+
+  document.getElementById("Register").addEventListener('click', function(e){
+    e.preventDefault();
+    set(ref(db, 'user/' + document.getElementById("Name").value),
+    {
+
+      Name: document.getElementById("Name").value,
+      Email: document.getElementById("Email").value,
+      Password: document.getElementById("Password").value
+
+    });
+    alert("Login Sucessfull  !");
+  })
+</script>
+
+
+  </body>
+</html>
